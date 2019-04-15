@@ -286,7 +286,7 @@
         <div class="realisations">
             <a href="#page_accueil"><img class="vignettes" src="images/realisations/vignette_portfolio.jpg" alt="vignette Portfolio"></a>
             <div class="flexalign">
-              <a href="https://github.com/Coeur2Lyon/20-Portfolio_PHP" target=_blank><img class="logostyle"  src="images/logos/logo_github.png" alt="Logo Github"/></a>
+              <a href="https://github.com/Coeur2Lyon/20_PHP_Portfolio_Public" target=_blank><img class="logostyle"  src="images/logos/logo_github.png" alt="Logo Github"/></a>
               <h3>Portfolio (développé en natif:sans frameworks)</h3>
             </div>
         </div>
