@@ -347,7 +347,6 @@
                 <a href="https://www.linkedin.com/in/vincent-fillon-881938106/" target=_blank><img class="logostyle" src="images/logos/logo_linkedin.png" alt="Logo Linkedin"></a>
                 <a href="https://github.com/Coeur2Lyon" target=_blank><img class="logostyle" src="images/logos/logo_github.png" alt="Logo Github"></a>
                 <a href="https://www.meetup.com/members/236377606/?_locale=fr-FR" target=_blank><img class="logostyle" src="images/logos/logo_meetup.png" alt="Logo MeetUp"></a>
-                <a href="mailto:contact@vincentfillon.fr" target=_blank><img class="logostyle" src="images/logos/logo_mail.png" alt="Logo mail (Enveloppe)"></a>
                 <a title="Cliquez pour télécharger mon CV" href="pdf/cv.pdf"><img class="logostyle" src="images/logos/logo_telechargement_CV.png" alt="logo téléchargement CV"></a>
             </div>
           </div>          
