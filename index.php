@@ -2,7 +2,7 @@
 <?php
     if (isset($_POST['message'])) {
         $position_arobase = strpos($_POST['email'], '@');
-        $to='vincent_fillon@hotmail.com';
+        $to='************@********.com';
         $subject='Contact Formulaire Portfolio vincentfillon.fr';
         $headers  = 'MIME-Version: 1.0' . "\r\n";
         $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
