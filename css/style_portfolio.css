@@ -1,0 +1,642 @@
+﻿html, body {
+font-family: Verdana;
+margin:0; /* pas de marges extérieures*/
+padding:0; /* pas de marges intérieures*/
+/* background: url("../images/fond_VF_bords_blancs.jpg") no-repeat center 200px #ffffff; */
+}
+
+
+
+a{
+  text-decoration: none;
+}
+
+div{
+  margin: 0;
+  padding: 0;
+}
+
+p{  
+  margin:0;
+  color:black;
+  padding: 8px;
+}
+
+.pages{
+  padding: 60px 60px 60px 0;
+  padding-left: 30px;
+  height:auto;
+  width: 95%;
+  min-width: 300px;
+}
+
+#bloc_page{
+margin:0;
+padding:0;
+}
+
+#menu_responsive{
+  display: none;
+}
+
+header{
+  margin: 0;
+  padding: 0;
+}
+
+nav { /* Style de la barre de navigation */
+  z-index: 2;
+  margin-top: 0; /* retrait de marge exterieur pour coller la barre de nav.au haut de page*/
+  padding: 0; /* pas de marges intérieures dans la barre de nav.*/
+  font-family:Helvetica, sans-serif; /* Police Helvetica */
+  font-weight: bold;
+  background: linear-gradient( #1b4ca9, #8dcceb 70%),
+  linear-gradient(#8dcceb, #d9d9d9 30%); /* J'applique un double dégrdé: Bleu-foncé à bleu ciel sur 70% de la hauteur de la barre de nav. et du bleu ciel au gris sur les 30% restants */
+  width: 100%; /* permet à la barre nav.de prendre toute la largeur de la fenêtre */
+  height: 60px;
+  position: fixed;
+}
+
+nav li
+{
+  margin:auto;
+  text-align: center;
+  align-content: space-between; /*Réparti avec un espacement égale entre eux */
+  list-style-type: none;
+  font-size: 15px;
+}
+
+nav ul{
+  padding: 0;
+  margin: 0;
+  width: auto;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-between;
+  list-style-type: none;
+}
+
+nav a{
+  margin: 0;
+  padding-top: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover{
+  font-size: 17px;
+  color:lightgrey;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+nav img{
+  margin-top: 5px;
+  height: 50px;
+}
+
+nav img:hover{
+  opacity: 0.8;
+}
+
+hr {
+  margin: 0;
+  width: 100%;
+  size: 10px;
+  color: lightgrey;
+  vertical-align:bottom;
+}
+
+/* Style des titres de chaque chapitre */
+h1{
+  margin:0,20px,0,20px;
+  font-size: 25px;
+  text-align: center;
+  background-color: #006df0;
+  color:#ffffff;
+}
+/* Style de la page d accueil -------------------------------------------------------------------*/
+
+#page_accueil.pages{
+  height:800px;
+}
+
+#navigateurs{
+  padding-top: 10px;
+}
+
+#modif_fond {
+  position: absolute;
+  top: 30%; left: 20%;
+  width: 756px;
+  height: 363px;
+  background-image: url("../images/fond_VF_bords_blancs.jpg");
+}
+
+#modif_fond:hover{
+  background-image: url("../images/fond_VF_bords_bleus.jpg");
+  transition: 1.5s;
+}
+
+/* -----------------------------------------------Style de la page Présentation */
+
+
+
+.flex{
+  justify-content: space-around;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.fond_transparent{
+  background-image:url("../images/Fond_bleu_transparent_20.png");
+}
+
+.fond_transparent:hover{
+  background-image:url("../images/Fond_bleu_transparent_30.png");
+  transition: 1.5s;
+}
+
+#presentation1{
+  z-index: 1;
+  margin-top: 20px;
+  height:650px;
+  width: 50%;
+  overflow: scroll;
+}
+
+h2{
+  text-align: center;
+  color:#006df0;
+}
+
+#coordonnees{
+  width: auto;
+  text-align: left;
+  padding: 0;
+  margin:10px;
+}
+#coordonnees h2 {
+  text-align: left;
+}
+
+#coordonnees h2,p:hover{
+  color:#ffffff;
+}
+
+
+
+#coordonnees :hover{
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #006df0;
+  transition: 1.5s;
+}
+
+#presentation2{
+  background-color: lightgrey;
+  margin-top: 20px;
+  height:auto;
+  width: 45%;
+  padding-bottom:10px;
+}
+
+.fond_binaire{
+  background-image:url("../images/Fond_bleu_transparent_20.png");
+}
+
+.fond_binaire:hover{
+  background-image:url("../images/fond_binaire.jpg");
+  transition: 1.5s;
+}
+
+#photo{
+  margin: 20px;
+  height: 200px;
+  width: 200px;
+  background-image: url("../images/binaire1.jpg");
+}
+
+#photo:hover{
+  background-image: url("../images/binaire2.jpg");
+}
+img#menu_deroulant{
+  z-index:5;
+}
+
+img#photo {
+  z-index: 0;
+  margin:0;
+  height: 200px;
+  border-radius: 0;
+  -webkit-filter: grayscale(100%); /* Pour les navigateurs Chrome, Safari, Opera */
+}
+
+#photo img:hover {
+  background-image: url("../images/binaire2.jpg");
+  -webkit-filter:inherit;
+  transition-duration: 3s;
+  border-radius: 600px;
+}
+
+#liens_contact{
+  margin: 20px;
+  text-align: center;
+}
+
+#liens_contact img{
+  height: 40px;
+}
+
+
+/*Style du formulaire --------------------------------*/
+
+form{
+  display: flex;
+  text-align: right;
+  margin: 0 auto;
+}
+label{
+  float: left;
+  display : block;
+  width:90px;
+}
+
+input
+{
+  border-radius: 5px;
+}
+
+#submit
+{
+  border: 1px solid grey;
+  color: white;
+  background-color: #1a1f24;
+}
+fieldset
+{
+  color:#ffffff;
+  border-radius: 8px;
+  background-color:grey;
+  max-width: 300px;
+}
+input:optional
+{
+  border-color: lightgrey; /* pour mettre en vert: #008000 */
+}
+
+input:required
+{
+  border-color: red;
+}
+.inline
+{
+  display: inline-block;
+  margin: 10px;
+}
+select{
+  padding:0;
+  width: 160px;
+  border-radius: 5px;
+}
+textarea{
+  width: 154px;
+  border-radius: 5px;
+  resize: none;
+  height: 60px;
+}
+
+#boutons input{
+  width:100px;
+}
+
+legend {
+  color:#ffffff;
+  font-size: 18px;
+  border-radius: 8px;
+  border-color:lightgrey; 
+  background-color:#333333;
+  max-width: 300px;
+  padding: 3px 6px;
+}
+#formulaire_contact{
+  margin: 0 auto;  
+  height: auto;
+}
+/* Style de la partie/page competences */
+
+@import url("reset.css");
+
+/* ------ layout
+-----------------------------------------------*/
+
+
+
+body#competences {
+background:#f5f5f5;
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+color:#333;
+line-height:18px;
+}
+
+#content {
+position:relative;
+top:30%;
+left:50%;
+margin:0px 0 0 -450px;
+width:900px;
+height:600px;
+}
+
+.legend {
+float:left;
+width:250px;
+margin-top:50px;
+}
+
+#content h1 {
+text-shadow:3px 3px 0 #ddd;
+color:#193340;
+font-size:40px;
+margin-bottom:40px;
+text-align:right;
+}
+
+.skills {
+float:left;
+clear:both;
+width:100%;
+}
+
+.skills ul,
+.skills li {
+display:block;
+list-style:none;
+margin:0;
+padding:0;
+}
+
+.skills li {
+float:right;
+clear:both;
+padding:0 15px;
+height:35px;
+line-height:35px;
+color:#fff;
+margin-bottom:1px;
+font-size:18px;
+}
+
+.skills .jq {
+background:#97BE0D;
+}
+
+.skills .css {
+background:#D84F5F;
+}
+
+.skills .html {
+background:#88B8E6;
+}
+
+.skills .php {
+background:#BEDBE9;
+}
+
+.skills .sql {
+background:#EDEBEE;
+}
+
+.footer {
+position:fixed;
+bottom:0;
+left:0;
+width:100%;
+background:#2D2D2D;
+color:#EAEAEA;
+padding:20px 0;
+}
+
+.footer a {
+color:#EAEAEA;
+}
+
+.footer a:hover {
+color:#E4842C;
+}
+
+.footer .inside {
+font-family: 'Cabin Sketch', arial, serif;
+font-size:22px;
+text-align:center;
+}
+
+
+#diagram {
+float:right;
+width:600px;
+height:600px;
+}
+
+.get {
+display:none;
+}
+
+
+/*
+-----------------------------------------------*/
+h3
+{
+  text-align: right;
+}
+a#competences {
+text-decoration:none;
+color:#333;
+}
+
+.wrapper{
+  width: 800px;
+  margin: 0 auto;
+}
+
+.wrapper.h1{
+font-family:'cabinsketchregular', arial, serif;
+text-shadow:3px 3px 0 #ddd;
+color:#193340;
+font-size:40px;
+margin-bottom:40px;
+text-align:right;
+}
+
+#tampon /* La div tampon sert à créer l'espace pour le diagramme circulaire "Compétences Web" flottant */
+{
+  height: 410px;
+  width: 600px;
+}
+
+/*--------Style de la div "Competences Applicatifs" et"Methodes"-------------------------------------------*/
+
+#competences_applicatif body{  
+  padding: 0;
+}
+
+#h2_competences_applicatif{
+  color: #ffffff;
+  border:1px solid #8dcceb;
+  background: #262626;
+  padding-bottom:5px;
+}
+#competences_methodes body{  
+  padding: 0;
+}
+
+#h2_competences_methodes{
+  color: #ffffff;
+  border:1px solid #8dcceb;
+  background: #262626;
+  padding-bottom:5px;
+}
+
+.center{
+  width: 70%;
+  position: relative;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 20px;
+  background: #333;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+
+.skillBox{
+  box-sizing: border-box;
+  width: 100%;
+  margin:20px 0;
+}
+
+.skillBox p{
+  color:#ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+  font-weight:bold;
+  letter-spacing: 1;
+}
+
+.skillBox p:nth-child(2){
+  float: right;
+  position: relative;
+  top:-25px;
+}
+.skill{
+  background: #262626;
+  padding: 4px;
+  box-sizing: border-box;
+  border:1px solid #8dcceb;
+  border-radius: 2px;
+}
+
+.skill_level{
+  background: linear-gradient(#1b4ca9, #8dcceb 70%);
+  width:100%;
+  height: 10px;
+}
+
+
+/* Style de la partie "Compétences transverses*/
+
+#h2_competences_transverses{
+  color: #ffffff;
+  border:1px solid lightgrey;
+  background: darkblue;
+  padding-bottom:5px;
+}
+
+.center2{
+  width: 70%;
+  position: relative;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 20px;
+  background: #1b4ca9;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+
+.skill2Box{
+  box-sizing: border-box;
+  width: 100%;
+  margin:20px 0;
+}
+
+.skill2Box p{
+  color:#ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+  font-weight:bold;
+  letter-spacing: 1;
+}
+
+.skill2Box p:nth-child(2){
+  float: right;
+  position: relative;
+  top:-25px;
+}
+.skill2{
+  background:darkblue;  
+  padding: 4px;
+  box-sizing: border-box;
+  border:1px solid lightgrey;
+  border-radius: 2px;
+}
+
+.skill2level{
+  background: linear-gradient(#333333, lightgrey 70%);
+  width:100%;
+  height: 10px;
+}
+
+
+/*--------------------------------------- page_realisations */
+
+.realisations
+{
+  /*background-image:url("../images/Fond_bleu_transparent_30.png");*/
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  width: 32%;  
+}
+
+.flexalign
+{
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  color: #006df0;  
+  font-size: 13px;
+}
+.vignettes
+{
+
+  width: 100%;
+}
+
+img.logostyle 
+{
+  z-index: 1;
+  width:40px;  
+}
+
